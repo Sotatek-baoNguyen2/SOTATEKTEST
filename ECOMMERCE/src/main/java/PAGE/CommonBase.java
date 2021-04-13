@@ -13,7 +13,15 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
 import MODEL.Product;
+
 
 public class CommonBase {
 
@@ -66,7 +74,7 @@ public class CommonBase {
 			}
 		};
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(expectation);
 		} catch (Throwable error) {
@@ -104,4 +112,44 @@ public class CommonBase {
 		} else
 			return "";
 	}
+
+	public WebElement getElement(String locator, WebDriver driver) {
+		WebElement elem = null;
+		try {
+			elem = driver.findElement(By.xpath(locator));
+		} catch (NoSuchElementException e) {
+			getElement(locator, driver);
+		} catch (StaleElementReferenceException e) {;
+			getElement(locator, driver);
+		}
+		return elem;
+	}
+	public String getAttribute(WebElement element) {
+		return element.getAttribute("href").toString();
+	}
+	public String getListAttribute(WebElement element) {
+		return element.getAttribute("href").toString();
+	}
+	public List<WebElement> getListElements(String locator, WebDriver driver) {
+		List<WebElement> elements = null;
+		try {
+			elements = driver.findElements(By.xpath(locator));
+		} catch (NoSuchElementException e) {
+			getElement(locator, driver);
+		} catch (StaleElementReferenceException e) {;
+			getElement(locator, driver);
+		}
+		return elements;
+	}
+	public void printList(List<Product> list) {
+		for (Product pd : list) {
+			System.out.println(pd.getWebsite() + "  Name: " + pd.getName() + "  Price: " + pd.getPrice()+ "   Link to detail:" + pd.getUrl());
+		}
+	}
+	public int compareTo(Product product) {
+        // sort student's name by ASC
+        return product.getName().compareTo(product.getName());
+    }
+	
 }
+

@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70775" started-at="2021-04-12T08:14:00Z" finished-at="2021-04-12T08:15:10Z">
+  <suite name="Default suite" duration-ms="34244" started-at="2021-04-13T05:03:16Z" finished-at="2021-04-13T05:03:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70775" started-at="2021-04-12T08:14:00Z" finished-at="2021-04-12T08:15:10Z">
+    <test name="Default test" duration-ms="34244" started-at="2021-04-13T05:03:16Z" finished-at="2021-04-13T05:03:50Z">
       <class name="EXCUTE.ecommerce">
-        <test-method status="PASS" signature="innit()[pri:0, instance:EXCUTE.ecommerce@63a65a25]" name="innit" is-config="true" duration-ms="2962" started-at="2021-04-12T08:14:00Z" finished-at="2021-04-12T08:14:03Z">
+        <test-method status="PASS" signature="innit()[pri:0, instance:EXCUTE.ecommerce@54c562f7]" name="innit" is-config="true" duration-ms="3314" started-at="2021-04-13T05:03:16Z" finished-at="2021-04-13T05:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- innit -->
-        <test-method status="PASS" signature="Test()[pri:0, instance:EXCUTE.ecommerce@63a65a25]" name="Test" duration-ms="67801" started-at="2021-04-12T08:14:03Z" finished-at="2021-04-12T08:15:10Z">
+        <test-method status="PASS" signature="Test()[pri:0, instance:EXCUTE.ecommerce@54c562f7]" name="Test" duration-ms="30279" started-at="2021-04-13T05:03:19Z" finished-at="2021-04-13T05:03:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
+        <test-method status="PASS" signature="after()[pri:0, instance:EXCUTE.ecommerce@54c562f7]" name="after" is-config="true" duration-ms="637" started-at="2021-04-13T05:03:49Z" finished-at="2021-04-13T05:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
       </class> <!-- EXCUTE.ecommerce -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

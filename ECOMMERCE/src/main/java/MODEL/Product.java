@@ -1,5 +1,7 @@
 package MODEL;
 
+import java.util.Comparator;
+
 public class Product {
 
 	String url, name, website, price;
@@ -34,5 +36,5 @@ public class Product {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-	;
+	
 }
