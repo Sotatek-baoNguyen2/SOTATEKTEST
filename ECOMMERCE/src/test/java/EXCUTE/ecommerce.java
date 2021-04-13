@@ -47,7 +47,7 @@ public class ecommerce {
 		list = tikiSearchPage.listProduct();
 		// open Ebay
 		ebayPage.openEbay();
-		ebayPage.setTxtSearch("iphone 11");
+		ebayPage.setTxtSearch(product);
 		ebayPage.clickBtnSearch();
 		// check result
 		ebaySearchPage.checkResultSearch(product);
