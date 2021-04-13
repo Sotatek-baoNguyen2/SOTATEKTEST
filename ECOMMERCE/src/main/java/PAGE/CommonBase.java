@@ -146,10 +146,6 @@ public class CommonBase {
 			System.out.println(pd.getWebsite() + "  Name: " + pd.getName() + "  Price: " + pd.getPrice()+ "   Link to detail:" + pd.getUrl());
 		}
 	}
-	public int compareTo(Product product) {
-        // sort student's name by ASC
-        return product.getName().compareTo(product.getName());
-    }
 	
 }
 

@@ -28,7 +28,6 @@ public class TikiSearchPage extends CommonBase {
 	@FindBy(id = "onesignal-slidedown-cancel-button")
 	WebElement btnBoQua;
 
-	// *[@class='product-item']
 	public void clickProduct() {
 		waitForPageLoaded(driver);
 		Click(Product, driver);
